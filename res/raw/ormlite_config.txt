@@ -1,9 +1,9 @@
 #
-# generated on 2012/06/06 05:55:57
+# generated on 2013/02/05 02:54:59
 #
 # --table-start--
-dataClass=com.example.helloandroid.SimpleData
-tableName=simpledata
+dataClass=com.sprint.HydroGeoLoggerBeta.WaterSample
+tableName=watersample
 # --table-fields-start--
 # --field-start--
 fieldName=id
@@ -11,7 +11,7 @@ generatedId=true
 # --field-end--
 # --field-start--
 fieldName=string
-indexName=simpledata_string_idx
+indexName=watersample_string_idx
 # --field-end--
 # --field-start--
 fieldName=millis
@@ -21,6 +21,73 @@ fieldName=date
 # --field-end--
 # --field-start--
 fieldName=even
+# --field-end--
+# --field-start--
+fieldName=name
+# --field-end--
+# --field-start--
+fieldName=station
+indexName=watersample_station_idx
+# --field-end--
+# --field-start--
+fieldName=hole_type_code
+# --field-end--
+# --field-start--
+fieldName=hole_lining_code
+# --field-end--
+# --field-start--
+fieldName=pipes_in_hole_code
+# --field-end--
+# --field-start--
+fieldName=hole_angle_code
+# --field-end--
+# --field-start--
+fieldName=outflow_type_code
+# --field-end--
+# --field-start--
+fieldName=sampling_issues_code
+# --field-end--
+# --field-start--
+fieldName=open
+# --field-end--
+# --field-start--
+fieldName=latitude
+# --field-end--
+# --field-start--
+fieldName=longitude
+# --field-end--
+# --field-start--
+fieldName=masl
+# --field-end--
+# --field-start--
+fieldName=water_table
+# --field-end--
+# --field-start--
+fieldName=sample_depth
+# --field-end--
+# --field-start--
+fieldName=bottom_of_hole
+# --field-end--
+# --field-start--
+fieldName=temperature
+# --field-end--
+# --field-start--
+fieldName=condition
+# --field-end--
+# --field-start--
+fieldName=notes
+# --field-end--
+# --field-start--
+fieldName=tree_sampled_height
+# --field-end--
+# --field-start--
+fieldName=tree_sampled_width
+# --field-end--
+# --field-start--
+fieldName=tree_sampled_longitude
+# --field-end--
+# --field-start--
+fieldName=tree_sampled_latitude
 # --field-end--
 # --table-fields-end--
 # --table-end--

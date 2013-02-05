@@ -1,6 +1,8 @@
 package com.sprint.HydroGeoLoggerBeta;
 
 import com.j256.ormlite.field.DatabaseField;
+import org.json.JSONException;
+import org.json.JSONObject;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
@@ -303,4 +305,34 @@ public class WaterSample {
 		sb.append(", ").append("even=").append(even);
 		return sb.toString();
 	}
+
+    public JSONObject toJson() throws JSONException {
+        JSONObject data =  new JSONObject();
+
+        data.put("id", id);
+        data.put("data", date.getTime());
+        data.put("name", name);
+        data.put("station", station);
+        data.put("hole_type_code", hole_type_code);
+        data.put("hole_lining_code", hole_lining_code);
+        data.put("pipes_in_hole_code", pipes_in_hole_code);
+        data.put("hole_angle_code", hole_angle_code);
+        data.put("outflow_type_code", outflow_type_code);
+        data.put("sampling_issues_code", sampling_issues_code);
+        data.put("open", open);
+        data.put("latitude", latitude);
+        data.put("longitude", longitude);
+        data.put("masl", masl);
+        data.put("water_table", water_table);
+        data.put("sample_depth", sample_depth);
+        data.put("bottom_of_hole", bottom_of_hole);
+        data.put("temperature", temperature);
+        data.put("condition", condition);
+        data.put("notes", notes);
+        data.put("tree_sampled_height", tree_sampled_height);
+        data.put("tree_sampled_width", tree_sampled_width);
+        data.put("tree_sampled_longitude", tree_sampled_longitude);
+
+        return data;
+    }
 }
