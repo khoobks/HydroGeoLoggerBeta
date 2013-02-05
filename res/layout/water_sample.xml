@@ -12,8 +12,7 @@
     <EditText
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:text="New EditText"
-            android:id="@+id/nameEditText"/>
+            android:id="@+id/nameEditText" android:hint="eg. Perfection Wells"/>
     <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -22,8 +21,7 @@
     <EditText
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:text="New EditText"
-            android:id="@+id/stationEditText"/>
+            android:id="@+id/stationEditText" android:hint="eg. McDougell Peak Station"/>
     <Button
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
