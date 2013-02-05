@@ -1,27 +1,185 @@
 <?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:nextFocusDown="@+id/nameEditText"
+    android:orientation="vertical" >
 
-<LinearLayout
-        android:orientation="vertical"
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent" xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Date"
+            android:id="@+id/textView" android:singleLine="true"/>
+
+    <EditText
+        android:id="@+id/dateEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="When was this sample taken?"
+        android:inputType="date"
+        android:nextFocusDown="@+id/nameEditText" >
+
+        <requestFocus />
+    </EditText>
+
     <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Name"
             android:id="@+id/textView" android:singleLine="true"/>
+
     <EditText
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/nameEditText" android:hint="eg. Perfection Wells"/>
+        android:id="@+id/nameEditText"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="eg. Perfection Wells"
+        android:nextFocusDown="@+id/stationEditText" />
+
     <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Station"
             android:id="@+id/textView1"/>
+
     <EditText
-            android:layout_width="fill_parent"
+        android:id="@+id/stationEditText"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="eg. McDougell Peak Station"
+        android:nextFocusDown="@+id/codeEditText1" />
+
+    <TextView
+        android:id="@+id/TextView01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Code" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <EditText
+            android:id="@+id/codeEditText1"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/stationEditText" android:hint="eg. McDougell Peak Station"/>
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="1"
+            android:nextFocusRight="@+id/codeEditText2" />
+
+        <EditText
+            android:id="@+id/codeEditText2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="2"
+            android:nextFocusRight="@+id/codeEditText3" />
+
+        <EditText
+            android:id="@+id/codeEditText3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="3"
+            android:nextFocusRight="@+id/codeEditText4" />
+
+        <EditText
+            android:id="@+id/codeEditText4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="4"
+            android:nextFocusRight="@+id/codeEditText5" />
+
+        <EditText
+            android:id="@+id/codeEditText5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="5"
+            android:nextFocusRight="@+id/codeEditText6" />
+
+        <EditText
+            android:id="@+id/codeEditText6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="6" />
+
+        <EditText
+            android:id="@+id/codeEditText7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="7"
+            android:nextFocusDown="@+id/latitudeEditText" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/TextView02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Location (Latitude/Longitude)" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <EditText
+            android:id="@+id/latitudeEditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="latitude"
+            android:inputType="numberDecimal"
+            android:nextFocusRight="@+id/longitudeEditText" />
+
+        <EditText
+            android:id="@+id/longitudeEditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="longitude"
+            android:inputType="numberDecimal"
+            android:nextFocusDown="@+id/maslEditText" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/TextView03"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="m A.S.L" />
+
+    <EditText
+        android:id="@+id/maslEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:nextFocusDown="@+id/waterTableEditText" />
+
+    <TextView
+        android:id="@+id/TextView04"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Water Table" />
+
+    <EditText
+        android:id="@+id/waterTableEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10" />
+
     <Button
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
