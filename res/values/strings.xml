@@ -4,4 +4,6 @@
     <string name="water_sample_saved">Water Sample Saved</string>
     <string name="menu_upload">Upload</string>
     <string name="data_upload_success">Data Upload Successful</string>
+    <string name="data_upload_failed">Failed to upload data:</string>
+    <string name="server_url">http://10.10.9.149:8000</string>
 </resources>
