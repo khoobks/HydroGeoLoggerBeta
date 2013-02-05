@@ -64,6 +64,214 @@ public class WaterSample {
     @DatabaseField
     float tree_sampled_longitude;
 
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public String getString() {
+        return string;
+    }
+
+    public void setString(String string) {
+        this.string = string;
+    }
+
+    public long getMillis() {
+        return millis;
+    }
+
+    public void setMillis(long millis) {
+        this.millis = millis;
+    }
+
+    public Date getDate() {
+        return date;
+    }
+
+    public void setDate(Date date) {
+        this.date = date;
+    }
+
+    public boolean isEven() {
+        return even;
+    }
+
+    public void setEven(boolean even) {
+        this.even = even;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getStation() {
+        return station;
+    }
+
+    public void setStation(String station) {
+        this.station = station;
+    }
+
+    public String getHole_type_code() {
+        return hole_type_code;
+    }
+
+    public void setHole_type_code(String hole_type_code) {
+        this.hole_type_code = hole_type_code;
+    }
+
+    public String getHole_lining_code() {
+        return hole_lining_code;
+    }
+
+    public void setHole_lining_code(String hole_lining_code) {
+        this.hole_lining_code = hole_lining_code;
+    }
+
+    public String getPipes_in_hole_code() {
+        return pipes_in_hole_code;
+    }
+
+    public void setPipes_in_hole_code(String pipes_in_hole_code) {
+        this.pipes_in_hole_code = pipes_in_hole_code;
+    }
+
+    public String getHole_angle_code() {
+        return hole_angle_code;
+    }
+
+    public void setHole_angle_code(String hole_angle_code) {
+        this.hole_angle_code = hole_angle_code;
+    }
+
+    public String getOutflow_type_code() {
+        return outflow_type_code;
+    }
+
+    public void setOutflow_type_code(String outflow_type_code) {
+        this.outflow_type_code = outflow_type_code;
+    }
+
+    public String getSampling_issues_code() {
+        return sampling_issues_code;
+    }
+
+    public void setSampling_issues_code(String sampling_issues_code) {
+        this.sampling_issues_code = sampling_issues_code;
+    }
+
+    public boolean isOpen() {
+        return open;
+    }
+
+    public void setOpen(boolean open) {
+        this.open = open;
+    }
+
+    public float getLatitude() {
+        return latitude;
+    }
+
+    public void setLatitude(float latitude) {
+        this.latitude = latitude;
+    }
+
+    public float getLongitude() {
+        return longitude;
+    }
+
+    public void setLongitude(float longitude) {
+        this.longitude = longitude;
+    }
+
+    public float getMasl() {
+        return masl;
+    }
+
+    public void setMasl(float masl) {
+        this.masl = masl;
+    }
+
+    public float getWater_table() {
+        return water_table;
+    }
+
+    public void setWater_table(float water_table) {
+        this.water_table = water_table;
+    }
+
+    public float getSample_depth() {
+        return sample_depth;
+    }
+
+    public void setSample_depth(float sample_depth) {
+        this.sample_depth = sample_depth;
+    }
+
+    public float getBottom_of_hole() {
+        return bottom_of_hole;
+    }
+
+    public void setBottom_of_hole(float bottom_of_hole) {
+        this.bottom_of_hole = bottom_of_hole;
+    }
+
+    public float getTemperature() {
+        return temperature;
+    }
+
+    public void setTemperature(float temperature) {
+        this.temperature = temperature;
+    }
+
+    public float getCondition() {
+        return condition;
+    }
+
+    public void setCondition(float condition) {
+        this.condition = condition;
+    }
+
+    public String getNotes() {
+        return notes;
+    }
+
+    public void setNotes(String notes) {
+        this.notes = notes;
+    }
+
+    public float getTree_sampled_height() {
+        return tree_sampled_height;
+    }
+
+    public void setTree_sampled_height(float tree_sampled_height) {
+        this.tree_sampled_height = tree_sampled_height;
+    }
+
+    public float getTree_sampled_width() {
+        return tree_sampled_width;
+    }
+
+    public void setTree_sampled_width(float tree_sampled_width) {
+        this.tree_sampled_width = tree_sampled_width;
+    }
+
+    public float getTree_sampled_longitude() {
+        return tree_sampled_longitude;
+    }
+
+    public void setTree_sampled_longitude(float tree_sampled_longitude) {
+        this.tree_sampled_longitude = tree_sampled_longitude;
+    }
+
     public float getTree_sampled_latitude() {
         return tree_sampled_latitude;
     }
