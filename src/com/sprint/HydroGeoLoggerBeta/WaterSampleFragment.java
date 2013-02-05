@@ -1,6 +1,5 @@
 package com.sprint.HydroGeoLoggerBeta;
 
-import android.app.Fragment;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -10,8 +9,9 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.LinearLayout;
 import android.widget.Toast;
+import com.j256.ormlite.dao.RuntimeExceptionDao;
 
-public class WaterSampleFragment extends Fragment {
+public class WaterSampleFragment extends OrmLiteBaseFragment<DatabaseHelper> {
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -71,9 +71,27 @@ public class WaterSampleFragment extends Fragment {
         Log.d("hydro", "codeSamplingIssues: "+codeSamplingIssues);
         Log.d("hydro", "latitude: "+latitude);
         Log.d("hydro", "longitude: "+longitude);
-        Log.d("hydro", "longitude: "+masl);
-        Log.d("hydro", "longitude: "+waterTable);
-        
+        Log.d("hydro", "masl: "+masl);
+        Log.d("hydro", "waterTable: "+waterTable);
+
+        RuntimeExceptionDao<WaterSample, Integer> dao = getHelper().getSimpleDataDao();
+
+        WaterSample sample = new WaterSample();
+        sample.setName(name);
+        sample.setStation(station);
+        sample.setHole_type_code(codeHoleType);
+        sample.setHole_lining_code(codeHoleLining);
+        sample.setPipes_in_hole_code(codePipesInHole);
+        sample.setHole_angle_code(codeHoleAngle);
+        sample.setOutflow_type_code(codeTankOutflow);
+        sample.setSampling_issues_code(codeSamplingIssues);
+        sample.setLatitude(latitude.floatValue());
+        sample.setLongitude(longitude.floatValue());
+        sample.setMasl(Float.valueOf(masl));
+        sample.setWater_table(Float.valueOf(waterTable));
+
+        int id = dao.create(sample);
+        Log.d("hydro", "New sample created.");
         Toast.makeText(getActivity(), R.string.water_sample_saved, Toast.LENGTH_SHORT).show();
     }
 }

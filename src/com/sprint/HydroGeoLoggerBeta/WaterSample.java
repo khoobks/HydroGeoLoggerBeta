@@ -311,7 +311,7 @@ public class WaterSample {
         JSONObject data =  new JSONObject();
 
         data.put("id", id);
-        data.put("data", date.getTime());
+        data.put("date", date == null ? null : date.getTime());
         data.put("name", name);
         data.put("station", station);
         data.put("hole_type_code", hole_type_code);
