@@ -1,5 +1,5 @@
 #
-# generated on 2013/02/05 02:54:59
+# generated on 2013/02/05 03:59:49
 #
 # --table-start--
 dataClass=com.sprint.HydroGeoLoggerBeta.WaterSample
@@ -88,6 +88,34 @@ fieldName=tree_sampled_longitude
 # --field-end--
 # --field-start--
 fieldName=tree_sampled_latitude
+# --field-end--
+# --table-fields-end--
+# --table-end--
+#################################
+# --table-start--
+dataClass=com.sprint.HydroGeoLoggerBeta.Observation
+tableName=observation
+# --table-fields-start--
+# --field-start--
+fieldName=id
+generatedId=true
+# --field-end--
+# --field-start--
+fieldName=water_sample_id
+canBeNull=false
+foreign=true
+# --field-end--
+# --field-start--
+fieldName=time
+# --field-end--
+# --field-start--
+fieldName=ph
+# --field-end--
+# --field-start--
+fieldName=eh
+# --field-end--
+# --field-start--
+fieldName=eh_corrected
 # --field-end--
 # --table-fields-end--
 # --table-end--
